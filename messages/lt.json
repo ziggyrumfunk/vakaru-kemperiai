@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "brand": "Vakarų kemperiai",
+    "homeTitle": "Kemperių nuoma Klaipėdoje | Vakarų kemperiai",
+    "description": "Kemperių ir mikroautobusų nuoma Klaipėdoje ir visoje Vakarų Lietuvoje (Palanga, Kretinga, Gargždai, Šilutė). Dešimtmečių patirtis, platus parkas ir asmeninis aptarnavimas."
+  },
+  "nav": {
+    "campers": "Kemperiai",
+    "minibuses": "Mikroautobusai",
+    "tips": "Naudingi patarimai",
+    "faq": "DUK",
+    "contact": "Kontaktai"
+  },
+  "header": {
+    "callCta": "Skambinti"
+  },
+  "footer": {
+    "tagline": "Kemperių ir mikroautobusų nuoma bei prekyba Klaipėdoje. Padėsime išsirinkti kelionę atitinkantį automobilį ir parinkti optimalią komplektaciją.",
+    "navTitle": "Meniu",
+    "contactTitle": "Kontaktai",
+    "termsLink": "Nuomos sąlygos",
+    "rights": "Visos teisės saugomos."
+  },
+  "cookie": {
+    "text": "Šioje svetainėje naudojame slapukus, kad pagerintume naršymo patirtį ir analizuotume srautą. Galite priimti arba atsisakyti nebūtinų slapukų.",
+    "accept": "Priimti",
+    "decline": "Atsisakyti"
+  },
+  "home": {
+    "eyebrow": "Kemperių nuoma · Klaipėda",
+    "title": "Jūsų kelionė prasideda čia.",
+    "subtitle": "Platus kokybiškų kemperių ir mikroautobusų pasirinkimas patraukliomis kainomis. Padėsime išsirinkti, suplanuoti maršrutą ir parinkti optimalią komplektaciją.",
+    "ctaPrimary": "Peržiūrėti kemperius",
+    "ctaSecondary": "Susisiekti",
+    "featuredEyebrow": "Mūsų pasiūlymai",
+    "featuredTitle": "Rekomenduojami kemperiai",
+    "viewAll": "Visi kemperiai",
+    "whyEyebrow": "Kodėl mes",
+    "whyTitle": "Patikima nuoma nuo 2015 metų",
+    "why1Title": "Platus pasirinkimas",
+    "why1Text": "Daugiau nei 20 kemperių ir mikroautobusų – nuo kompaktiškų iki erdvių alkovinių modelių didelėms šeimoms.",
+    "why2Title": "Asmeninis dėmesys",
+    "why2Text": "Padėsime išsirinkti tinkamiausią automobilį, suplanuoti maršrutą ir parinkti reikalingą komplektaciją.",
+    "why3Title": "Pilnai įrengti",
+    "why3Text": "Visi kemperiai paruošti kelionei: virtuvėlė, dušas, WC, šildymas ir autonominis maitinimas.",
+    "ctaBandTitle": "Pasiruošę keliauti?",
+    "ctaBandText": "Susisiekite ir mes padėsime išsirinkti Jūsų kelionei tinkamiausią kemperį.",
+    "ctaCall": "Skambinti",
+    "ctaEmail": "Rašyti el. laišką",
+    "aboutEyebrow": "Apie mus",
+    "aboutTitle": "Dešimtmečių patirtis kelionėse",
+    "aboutText": "Vakarų kemperiai — Klaipėdoje įsikūręs šeimos verslas, turintis dešimtmečių patirtį kemperių ir mikroautobusų nuomoje bei prekyboje. Per tuos metus padėjome tūkstančiams keliautojų atrasti laisvę keliauti savo tempu po Lietuvą, Baltijos šalis ir visą Europą. Mūsų parke — daugiau nei 20 kruopščiai prižiūrimų kemperių, o kiekvieną klientą pasitinkame asmeniškai: padedame išsirinkti, parodome kaip viskuo naudotis ir paruošiame kelionei.",
+    "statExpLabel": "metų patirtis",
+    "statFleetLabel": "kemperiai ir mikroautobusai",
+    "statRatingLabel": "Google įvertinimas",
+    "statBaseLabel": "bazė Vakarų Lietuvoje",
+    "reviewsEyebrow": "Atsiliepimai",
+    "reviewsTitle": "Ką sako mūsų klientai",
+    "reviewsSubtitle": "4,2 įvertinimas Google žemėlapiuose iš tikrų klientų atsiliepimų.",
+    "reviewsCta": "Žiūrėti Google"
+  },
+  "vehicle": {
+    "seatsShort": "vietos",
+    "berthsShort": "miegamos",
+    "specsTitle": "Techniniai duomenys",
+    "featuresTitle": "Komplektacija",
+    "galleryTitle": "Galerija",
+    "priceNote": "Nuomos kaina visada derinama visam kelionės laikotarpiui.",
+    "priceOnRequest": "Kaina pagal pasiteiravimą",
+    "inquireTitle": "Domina šis automobilis?",
+    "inquireText": "Parašykite mums el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite – atsakysime į visus klausimus.",
+    "back": "Atgal",
+    "specs": {
+      "chassis": "Bazė",
+      "engine": "Variklis",
+      "power": "Galia",
+      "year": "Metai",
+      "transmission": "Pavarų dėžė",
+      "length": "Ilgis",
+      "height": "Aukštis",
+      "width": "Plotis",
+      "weight": "Masė",
+      "water": "Vandens bakas",
+      "fuelTank": "Kuro bakas",
+      "consumption": "Sąnaudos",
+      "seats": "Sėdimos vietos",
+      "berths": "Miegamos vietos"
+    },
+    "transmissionManual": "Mechaninė",
+    "transmissionAutomatic": "Automatinė",
+    "features": {
+      "awning": "Ištraukiama markizė",
+      "ac": "Oro kondicionierius",
+      "gasStove": "Dujinė viryklė",
+      "fridge": "Šaldytuvas",
+      "boiler": "Karšto vandens boileris",
+      "shower": "Dušas",
+      "wc": "WC",
+      "heating": "Autonominis šildymas",
+      "thermalCurtains": "Terminės užuolaidos",
+      "insectScreens": "Tinkleliai nuo vabzdžių",
+      "solar": "Saulės baterijos",
+      "bikeRack": "Dviračių laikiklis",
+      "tv": "TV",
+      "navigation": "Navigacija",
+      "alarm": "Signalizacija",
+      "powerSteering": "Vairo stiprintuvas",
+      "individualSeats": "Reguliuojamos sėdynės",
+      "guideMic": "Gido mikrofonas",
+      "largeLuggage": "Didelis bagažo skyrius"
+    }
+  },
+  "listing": {
+    "campersTitle": "Kemperiai",
+    "campersIntro": "Rinkitės iš plataus kokybiškų kemperių asortimento – nuo kompaktiškų iki erdvių alkovinių modelių. Visi automobiliai pilnai įrengti kelionei.",
+    "minibusesTitle": "Mikroautobusai",
+    "minibusesIntro": "Patogūs ir ekonomiški mikroautobusai grupinėms kelionėms, ekskursijoms ir pervežimams.",
+    "vehiclesCount": "automobilių"
+  },
+  "tips": {
+    "title": "Naudingi patarimai",
+    "intro": "Prasideda atostogos, kelioninis automobilis rezervuotas, tačiau nežinote nuo ko pradėti? Keletas patarimų prieš leidžiantis į kelionę.",
+    "items": [
+      {
+        "title": "Pasiimkite automobilį ryte",
+        "text": "Suplanuokite kelionę taip, kad automobilį pasiimtumėte ryte, o vakarą skirtumėte pasiruošimui."
+      },
+      {
+        "title": "Atidžiai išklausykite instruktažą",
+        "text": "Net jei viskas atrodo paprasta – prieš iškeliaujant užplūsta emocijos ir svarbūs dalykai gali užsimiršti. Ypatingą dėmesį skirkite šaldytuvui, šildytuvui, dujinei viryklei ir boileriui."
+      },
+      {
+        "title": "Perskaitykite nuomos sutartį",
+        "text": "Būtinai susipažinkite su nuomos sąlygomis – jų nesilaikymas gali kainuoti."
+      },
+      {
+        "title": "Neskubėkite išvykti",
+        "text": "Pasiėmę automobilį, patogiai susidėkite daiktus jiems skirtose vietose, neperkraukite ir paskirstykite svorį tolygiai abiejose pusėse."
+      },
+      {
+        "title": "Pasiruoškite daiktų sąrašą",
+        "text": "Kad nepamirštumėte reikalingiausių daiktų, sudarykite sąrašą – taip susidėsite viską, ko reikia, ir liks vietos suvenyrams."
+      },
+      {
+        "title": "Pasidomėkite šalies taisyklėmis",
+        "text": "Vykstant į kitą šalį, pasidomėkite kelių eismo taisyklėmis, nakvynės vietomis, kempingais ir mokesčiais."
+      },
+      {
+        "title": "Rezervuokite kempingus iš anksto",
+        "text": "Vietą kempinge rasite visada, tačiau populiariose vietose verta rezervuoti iš anksto."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Dažniausiai užduodami klausimai",
+    "intro": "Atsakymai į dažniausius klausimus apie kemperių nuomą. Nradote atsakymo? Susisiekite su mumis.",
+    "items": [
+      {
+        "q": "Kokios vairuotojo pažymėjimo kategorijos reikia?",
+        "a": "Visiems mūsų kemperiams ir mikroautobusams pakanka B kategorijos vairuotojo pažymėjimo, nes jų masė neviršija 3500 kg."
+      },
+      {
+        "q": "Kokia nuomos kaina?",
+        "a": "Nuomos kaina visada derinama individualiai visam kelionės laikotarpiui ir priklauso nuo sezono, trukmės bei pasirinkto automobilio. Susisiekite ir pateiksime pasiūlymą."
+      },
+      {
+        "q": "Ar reikalingas užstatas?",
+        "a": "Taip, prieš kelionę paimamas grąžinamas užstatas. Jo dydis aptariamas rezervuojant automobilį."
+      },
+      {
+        "q": "Ar galima keliauti į užsienį?",
+        "a": "Taip, su mūsų kemperiais galima keliauti po Europą. Apie planuojamą maršrutą informuokite iš anksto."
+      },
+      {
+        "q": "Ar galima keliauti su augintiniu?",
+        "a": "Keliones su augintiniais aptariame individualiai. Informuokite mus rezervuodami."
+      },
+      {
+        "q": "Kas įskaičiuota į nuomos kainą?",
+        "a": "Automobilis perduodamas pilnai paruoštas kelionei su visa būtina virtuvės ir buities įranga. Detales aptariame perduodant automobilį."
+      },
+      {
+        "q": "Kaip rezervuoti kemperį?",
+        "a": "Parašykite el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite telefonu – suderinsime visas detales."
+      },
+      {
+        "q": "Kada atsiimti ir grąžinti automobilį?",
+        "a": "Atsiėmimo ir grąžinimo laiką suderiname individualiai rezervuojant."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Nuomos sąlygos",
+    "intro": "Pagrindinės kemperių ir mikroautobusų nuomos sąlygos. Visos detalės aptariamos sudarant nuomos sutartį.",
+    "sections": [
+      {
+        "title": "Rezervacija",
+        "body": "Automobilis rezervuojamas suderinus datas ir sąlygas. Rekomenduojame rezervuoti iš anksto, ypač vasaros sezono metu."
+      },
+      {
+        "title": "Vairuotojas",
+        "body": "Vairuotojui pakanka B kategorijos vairuotojo pažymėjimo. Vairuotojo amžius ir patirtis aptariami individualiai."
+      },
+      {
+        "title": "Užstatas",
+        "body": "Prieš perduodant automobilį paimamas grąžinamas užstatas, kuris grąžinamas grąžinus tvarkingą automobilį."
+      },
+      {
+        "title": "Automobilio perdavimas ir grąžinimas",
+        "body": "Perduodant automobilį atliekamas apžiūros aktas. Prašome atidžiai apžiūrėti automobilį ir pažymėti pastebėtus defektus."
+      },
+      {
+        "title": "Naudojimasis",
+        "body": "Automobiliu naudokitės atsakingai laikydamiesi instruktažo ir nuomos sutarties sąlygų. Rūkyti salone draudžiama."
+      },
+      {
+        "title": "Kelionės į užsienį",
+        "body": "Kelionės už Lietuvos ribų galimos suderinus iš anksto. Informuokite apie planuojamą maršrutą."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontaktai",
+    "intro": "Susisiekite su mumis – padėsime išsirinkti Jūsų kelionei tinkamiausią automobilį. Norėdami rezervuoti, parašykite el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite.",
+    "companyTitle": "Rekvizitai",
+    "addressLabel": "Adresas",
+    "phoneLabel": "Telefonai",
+    "emailLabel": "El. paštas",
+    "writeEmail": "Rašyti el. laišką",
+    "mapTitle": "Kaip mus rasti"
+  }
+}

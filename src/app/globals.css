@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f5f1e8;
+  --color-paper-2: #ece5d8;
+  --color-ink: #1a1813;
+  --color-charcoal: #14120e;
+  --color-graphite: #221f18;
+  --color-line: #e0d8c8;
+  --color-line-dark: #36332b;
+  --color-champagne: #9a7a36;
+  --color-champagne-soft: #cdb074;
+  --color-muted: #5f5a4e;
+  --color-muted-dark: #a8a294;
+  --color-paper-dim: #d9d3c7;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: var(--color-champagne); color: #fff; }
+a { color: inherit; text-decoration: none; }
+
+.container-luxe { width: 100%; max-width: 1280px; margin-inline: auto; padding-inline: 1.5rem; }
+@media (min-width: 768px) { .container-luxe { padding-inline: 2.5rem; } }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-champagne);
+}
+.display { font-weight: 300; letter-spacing: -0.02em; line-height: 1.02; }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1); }
+.reveal.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+@keyframes heroZoom { from { transform: scale(1.02); } to { transform: scale(1.09); } }
+.hero-zoom { animation: heroZoom 22s ease-in-out infinite alternate; will-change: transform; }
+@media (prefers-reduced-motion: reduce) { .hero-zoom { animation: none; } }
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-track { display: flex; width: max-content; animation: marquee var(--marquee-duration, 70s) linear infinite; will-change: transform; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }

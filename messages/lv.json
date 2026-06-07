@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "brand": "Vakarų kemperiai",
+    "homeTitle": "Kemperu noma Klaipēdā | Vakarų kemperiai",
+    "description": "Kemperu un mikroautobusu noma Klaipēdā un visā Rietumlietuvā (Palanga, Kretinga, Gargždai, Šilute). Gadu desmitiem ilga pieredze, plašs parks un personīga apkalpošana."
+  },
+  "nav": {
+    "campers": "Kemperi",
+    "minibuses": "Mikroautobusi",
+    "tips": "Noderīgi padomi",
+    "faq": "BUJ",
+    "contact": "Kontakti"
+  },
+  "header": { "callCta": "Zvanīt" },
+  "footer": {
+    "tagline": "Kemperu un mikroautobusu noma un tirdzniecība Klaipēdā. Palīdzēsim izvēlēties ceļojumam piemērotu automašīnu un optimālo aprīkojumu.",
+    "navTitle": "Izvēlne",
+    "contactTitle": "Kontakti",
+    "termsLink": "Nomas noteikumi",
+    "rights": "Visas tiesības aizsargātas."
+  },
+  "cookie": {
+    "text": "Šajā vietnē izmantojam sīkdatnes, lai uzlabotu pārlūkošanas pieredzi un analizētu apmeklējumu. Varat pieņemt vai noraidīt neobligātās sīkdatnes.",
+    "accept": "Pieņemt",
+    "decline": "Noraidīt"
+  },
+  "home": {
+    "eyebrow": "Kemperu noma · Klaipēda",
+    "title": "Tavs ceļojums sākas šeit.",
+    "subtitle": "Plašs kvalitatīvu kemperu un mikroautobusu klāsts par pievilcīgām cenām. Palīdzēsim izvēlēties, saplānot maršrutu un atrast optimālo aprīkojumu.",
+    "ctaPrimary": "Apskatīt kemperus",
+    "ctaSecondary": "Sazināties",
+    "featuredEyebrow": "Mūsu piedāvājumi",
+    "featuredTitle": "Ieteicamie kemperi",
+    "viewAll": "Visi kemperi",
+    "whyEyebrow": "Kāpēc mēs",
+    "whyTitle": "Uzticama noma ar ilggadēju pieredzi",
+    "why1Title": "Plašs klāsts",
+    "why1Text": "Vairāk nekā 20 kemperu un mikroautobusu — no kompaktiem līdz plašiem alkova modeļiem lielām ģimenēm.",
+    "why2Title": "Personīga pieeja",
+    "why2Text": "Palīdzēsim izvēlēties piemērotāko automašīnu, saplānot maršrutu un atrast nepieciešamo aprīkojumu.",
+    "why3Title": "Pilnībā aprīkoti",
+    "why3Text": "Visi kemperi ir gatavi ceļojumam: virtuvīte, duša, tualete, apkure un autonomā elektrība.",
+    "ctaBandTitle": "Gatavs ceļojumam?",
+    "ctaBandText": "Sazinieties ar mums, un mēs palīdzēsim izvēlēties jūsu ceļojumam piemērotāko kemperi.",
+    "ctaCall": "Zvanīt",
+    "ctaEmail": "Rakstīt e-pastu",
+    "aboutEyebrow": "Par mums",
+    "aboutTitle": "Gadu desmitiem ilga pieredze ceļojumos",
+    "aboutText": "Vakarų kemperiai ir ģimenes uzņēmums Klaipēdā ar gadu desmitiem ilgu pieredzi kemperu un mikroautobusu nomā un tirdzniecībā. Šajos gados esam palīdzējuši tūkstošiem ceļotāju izbaudīt brīvību ceļot savā tempā pa Lietuvu, Baltijas valstīm un visu Eiropu. Mūsu parkā ir vairāk nekā 20 rūpīgi koptu kemperu, un katru klientu sagaidām personīgi: palīdzam izvēlēties, parādām, kā visu lietot, un sagatavojam ceļam.",
+    "statExpLabel": "gadu pieredze",
+    "statFleetLabel": "kemperi un mikroautobusi",
+    "statRatingLabel": "Google vērtējums",
+    "statBaseLabel": "bāze Rietumlietuvā",
+    "reviewsEyebrow": "Atsauksmes",
+    "reviewsTitle": "Ko saka mūsu klienti",
+    "reviewsSubtitle": "Vērtējums 4,2 Google kartēs no reālām klientu atsauksmēm.",
+    "reviewsCta": "Skatīt Google"
+  },
+  "vehicle": {
+    "seatsShort": "vietas",
+    "berthsShort": "guļvietas",
+    "specsTitle": "Tehniskie dati",
+    "featuresTitle": "Aprīkojums",
+    "galleryTitle": "Galerija",
+    "priceNote": "Nomas cena vienmēr tiek saskaņota par visu ceļojuma laiku.",
+    "priceOnRequest": "Cena pēc pieprasījuma",
+    "inquireTitle": "Interesē šī automašīna?",
+    "inquireText": "Rakstiet mums e-pastu, norādot vēlamos datumus un ceļotāju skaitu, vai zvaniet — atbildēsim uz visiem jautājumiem.",
+    "back": "Atpakaļ",
+    "specs": {
+      "chassis": "Bāze",
+      "engine": "Dzinējs",
+      "power": "Jauda",
+      "year": "Gads",
+      "transmission": "Ātrumkārba",
+      "length": "Garums",
+      "height": "Augstums",
+      "width": "Platums",
+      "weight": "Masa",
+      "water": "Ūdens tvertne",
+      "fuelTank": "Degvielas tvertne",
+      "consumption": "Patēriņš",
+      "seats": "Sēdvietas",
+      "berths": "Guļvietas"
+    },
+    "transmissionManual": "Mehāniskā",
+    "transmissionAutomatic": "Automātiskā",
+    "features": {
+      "awning": "Izvelkama markīze",
+      "ac": "Gaisa kondicionieris",
+      "gasStove": "Gāzes plīts",
+      "fridge": "Ledusskapis",
+      "boiler": "Karstā ūdens boilers",
+      "shower": "Duša",
+      "wc": "Tualete",
+      "heating": "Autonomā apkure",
+      "thermalCurtains": "Termo aizkari",
+      "insectScreens": "Moskītu tīkli",
+      "solar": "Saules baterijas",
+      "bikeRack": "Velosipēdu turētājs",
+      "tv": "TV",
+      "navigation": "Navigācija",
+      "alarm": "Signalizācija",
+      "powerSteering": "Stūres pastiprinātājs",
+      "individualSeats": "Regulējami sēdekļi",
+      "guideMic": "Gida mikrofons",
+      "largeLuggage": "Liela bagāžas nodaļa"
+    }
+  },
+  "listing": {
+    "campersTitle": "Kemperi",
+    "campersIntro": "Izvēlieties no plaša kvalitatīvu kemperu klāsta — no kompaktiem līdz plašiem alkova modeļiem. Visas automašīnas ir pilnībā aprīkotas ceļojumam.",
+    "minibusesTitle": "Mikroautobusi",
+    "minibusesIntro": "Ērti un ekonomiski mikroautobusi grupu braucieniem, ekskursijām un pārvadājumiem.",
+    "vehiclesCount": "automašīnas"
+  },
+  "tips": {
+    "title": "Noderīgi padomi",
+    "intro": "Sākas atvaļinājums, automašīna rezervēta, taču nezināt, ar ko sākt? Daži padomi pirms ceļojuma.",
+    "items": [
+      { "title": "Paņemiet automašīnu no rīta", "text": "Plānojiet ceļojumu tā, lai automašīnu paņemtu no rīta, bet vakaru veltītu sagatavošanās darbiem." },
+      { "title": "Uzmanīgi noklausieties instruktāžu", "text": "Pat ja viss šķiet vienkārši — pirms izbraukšanas pārņem emocijas, un svarīgas lietas var aizmirsties. Īpašu uzmanību pievērsiet ledusskapim, sildītājam, gāzes plītij un boilerim." },
+      { "title": "Izlasiet nomas līgumu", "text": "Noteikti iepazīstieties ar nomas noteikumiem — to neievērošana var dārgi maksāt." },
+      { "title": "Nesteidzieties izbraukt", "text": "Paņēmuši automašīnu, ērti salieciet mantas tām paredzētajās vietās, nepārslogojiet to un sadaliet svaru vienmērīgi abās pusēs." },
+      { "title": "Sagatavojiet mantu sarakstu", "text": "Lai neaizmirstu nepieciešamāko, izveidojiet sarakstu — tā paņemsiet visu vajadzīgo, un atliks vieta suvenīriem." },
+      { "title": "Uzziniet valsts noteikumus", "text": "Dodoties uz ārzemēm, noskaidrojiet ceļu satiksmes noteikumus, nakšņošanas vietas, kempingus un nodevas." },
+      { "title": "Rezervējiet kempingus laikus", "text": "Vietu kempingā vienmēr atradīsiet, taču populārās vietās ir vērts rezervēt iepriekš." }
+    ]
+  },
+  "faq": {
+    "title": "Biežāk uzdotie jautājumi",
+    "intro": "Atbildes uz biežākajiem jautājumiem par kemperu nomu. Neatradāt atbildi? Sazinieties ar mums.",
+    "items": [
+      { "q": "Kāda vadītāja apliecības kategorija nepieciešama?", "a": "Visiem mūsu kemperiem un mikroautobusiem pietiek ar B kategorijas vadītāja apliecību, jo to masa nepārsniedz 3500 kg." },
+      { "q": "Kāda ir nomas cena?", "a": "Cena vienmēr tiek saskaņota individuāli par visu ceļojuma laiku un ir atkarīga no sezonas, ilguma un izvēlētās automašīnas. Sazinieties ar mums, lai saņemtu piedāvājumu." },
+      { "q": "Vai nepieciešams depozīts?", "a": "Jā, pirms ceļojuma tiek ņemts atmaksājams depozīts. Tā apmērs tiek saskaņots, veicot rezervāciju." },
+      { "q": "Vai var ceļot uz ārzemēm?", "a": "Jā, ar mūsu kemperiem var ceļot pa Eiropu. Lūdzu, par plānoto maršrutu informējiet iepriekš." },
+      { "q": "Vai var ceļot ar mājdzīvnieku?", "a": "Ceļojumus ar mājdzīvniekiem saskaņojam individuāli. Informējiet mūs, veicot rezervāciju." },
+      { "q": "Kas iekļauts cenā?", "a": "Automašīna tiek nodota pilnībā gatava ceļojumam ar visu nepieciešamo virtuves un sadzīves aprīkojumu. Detaļas saskaņojam nodošanas brīdī." },
+      { "q": "Kā rezervēt kemperi?", "a": "Rakstiet e-pastu, norādot vēlamos datumus un ceļotāju skaitu, vai zvaniet — saskaņosim visas detaļas." },
+      { "q": "Kad paņemt un atdot automašīnu?", "a": "Saņemšanas un atdošanas laiku saskaņojam individuāli, veicot rezervāciju." }
+    ]
+  },
+  "terms": {
+    "title": "Nomas noteikumi",
+    "intro": "Galvenie kemperu un mikroautobusu nomas noteikumi. Visas detaļas tiek saskaņotas, slēdzot nomas līgumu.",
+    "sections": [
+      { "title": "Rezervācija", "body": "Automašīna tiek rezervēta pēc datumu un nosacījumu saskaņošanas. Iesakām rezervēt iepriekš, īpaši vasaras sezonā." },
+      { "title": "Vadītājs", "body": "Vadītājam pietiek ar B kategorijas apliecību. Vadītāja vecums un pieredze tiek saskaņoti individuāli." },
+      { "title": "Depozīts", "body": "Pirms nodošanas tiek ņemts atmaksājams depozīts, kas tiek atgriezts pēc tehniskā kārtībā esošas automašīnas atdošanas." },
+      { "title": "Nodošana un atdošana", "body": "Nodošanas brīdī tiek sastādīts apskates akts. Lūdzam rūpīgi apskatīt automašīnu un atzīmēt pamanītos defektus." },
+      { "title": "Lietošana", "body": "Lietojiet automašīnu atbildīgi, ievērojot instruktāžu un nomas līguma nosacījumus. Smēķēšana salonā ir aizliegta." },
+      { "title": "Ceļojumi uz ārzemēm", "body": "Ceļojumi ārpus Lietuvas iespējami pēc iepriekšējas vienošanās. Lūdzu, informējiet par plānoto maršrutu." }
+    ]
+  },
+  "contact": {
+    "title": "Kontakti",
+    "intro": "Sazinieties ar mums — palīdzēsim izvēlēties jūsu ceļojumam piemērotāko automašīnu. Lai rezervētu, rakstiet e-pastu, norādot vēlamos datumus un ceļotāju skaitu, vai zvaniet.",
+    "companyTitle": "Rekvizīti",
+    "addressLabel": "Adrese",
+    "phoneLabel": "Tālruņi",
+    "emailLabel": "E-pasts",
+    "writeEmail": "Rakstīt e-pastu",
+    "mapTitle": "Kā mūs atrast"
+  }
+}

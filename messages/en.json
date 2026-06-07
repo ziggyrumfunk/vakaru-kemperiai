@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "brand": "Vakarų kemperiai",
+    "homeTitle": "Camper rental in Klaipėda | Vakarų kemperiai",
+    "description": "Camper and minibus rental in Klaipėda and across Western Lithuania (Palanga, Kretinga, Gargždai, Šilutė). Decades of experience, a wide fleet and personal service."
+  },
+  "nav": {
+    "campers": "Motorhomes",
+    "minibuses": "Minibuses",
+    "tips": "Useful tips",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "header": {
+    "callCta": "Call us"
+  },
+  "footer": {
+    "tagline": "Motorhome and minibus rental and sales in Klaipėda. We help you pick the right vehicle for your trip and the ideal configuration.",
+    "navTitle": "Menu",
+    "contactTitle": "Contact",
+    "termsLink": "Rental terms",
+    "rights": "All rights reserved."
+  },
+  "cookie": {
+    "text": "We use cookies on this site to improve your browsing experience and analyse traffic. You can accept or decline non-essential cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "home": {
+    "eyebrow": "Motorhome rental · Klaipėda",
+    "title": "Your journey starts here.",
+    "subtitle": "A wide choice of quality motorhomes and minibuses at attractive prices. We help you choose, plan your route and pick the ideal configuration.",
+    "ctaPrimary": "Browse motorhomes",
+    "ctaSecondary": "Get in touch",
+    "featuredEyebrow": "Our selection",
+    "featuredTitle": "Recommended motorhomes",
+    "viewAll": "All motorhomes",
+    "whyEyebrow": "Why us",
+    "whyTitle": "Trusted rental since 2015",
+    "why1Title": "Wide selection",
+    "why1Text": "More than 20 motorhomes and minibuses, from compact models to spacious overcab layouts for large families.",
+    "why2Title": "Personal attention",
+    "why2Text": "We help you choose the best vehicle, plan your route and select the equipment you need.",
+    "why3Title": "Fully equipped",
+    "why3Text": "Every motorhome is travel-ready: kitchenette, shower, WC, heating and off-grid power.",
+    "ctaBandTitle": "Ready to travel?",
+    "ctaBandText": "Get in touch and we will help you choose the best motorhome for your trip.",
+    "ctaCall": "Call us",
+    "ctaEmail": "Send an email",
+    "aboutEyebrow": "About us",
+    "aboutTitle": "Decades of experience on the road",
+    "aboutText": "Vakarų kemperiai is a family business based in Klaipėda with decades of experience renting and selling campers and minibuses. Over the years we have helped thousands of travellers discover the freedom of touring Lithuania, the Baltic states and the rest of Europe at their own pace. Our fleet holds more than 20 carefully maintained campers, and we welcome every client in person: we help you choose, show you how everything works and get you ready for the road.",
+    "statExpLabel": "years of experience",
+    "statFleetLabel": "campers & minibuses",
+    "statRatingLabel": "Google rating",
+    "statBaseLabel": "based in Western Lithuania",
+    "reviewsEyebrow": "Reviews",
+    "reviewsTitle": "What our customers say",
+    "reviewsSubtitle": "Rated 4.2 on Google Maps from real customer reviews.",
+    "reviewsCta": "View on Google"
+  },
+  "vehicle": {
+    "seatsShort": "seats",
+    "berthsShort": "berths",
+    "specsTitle": "Specifications",
+    "featuresTitle": "Equipment",
+    "galleryTitle": "Gallery",
+    "priceNote": "The rental price is always agreed for the whole trip.",
+    "priceOnRequest": "Price on request",
+    "inquireTitle": "Interested in this vehicle?",
+    "inquireText": "Send us an email with your preferred dates and number of travellers, or give us a call. We will answer all your questions.",
+    "back": "Back",
+    "specs": {
+      "chassis": "Base",
+      "engine": "Engine",
+      "power": "Power",
+      "year": "Year",
+      "transmission": "Transmission",
+      "length": "Length",
+      "height": "Height",
+      "width": "Width",
+      "weight": "Weight",
+      "water": "Water tank",
+      "fuelTank": "Fuel tank",
+      "consumption": "Consumption",
+      "seats": "Seats",
+      "berths": "Berths"
+    },
+    "transmissionManual": "Manual",
+    "transmissionAutomatic": "Automatic",
+    "features": {
+      "awning": "Retractable awning",
+      "ac": "Air conditioning",
+      "gasStove": "Gas stove",
+      "fridge": "Fridge",
+      "boiler": "Hot water boiler",
+      "shower": "Shower",
+      "wc": "WC",
+      "heating": "Off-grid heating",
+      "thermalCurtains": "Thermal curtains",
+      "insectScreens": "Insect screens",
+      "solar": "Solar panels",
+      "bikeRack": "Bike rack",
+      "tv": "TV",
+      "navigation": "Navigation",
+      "alarm": "Alarm",
+      "powerSteering": "Power steering",
+      "individualSeats": "Adjustable seats",
+      "guideMic": "Guide microphone",
+      "largeLuggage": "Large luggage space"
+    }
+  },
+  "listing": {
+    "campersTitle": "Motorhomes",
+    "campersIntro": "Choose from a wide range of quality motorhomes, from compact to spacious overcab layouts. Every vehicle is fully equipped for travel.",
+    "minibusesTitle": "Minibuses",
+    "minibusesIntro": "Comfortable and economical minibuses for group trips, excursions and transfers.",
+    "vehiclesCount": "vehicles"
+  },
+  "tips": {
+    "title": "Useful tips",
+    "intro": "Holidays are starting, the vehicle is booked, but you are not sure where to begin? A few tips before you hit the road.",
+    "items": [
+      {
+        "title": "Pick the vehicle up in the morning",
+        "text": "Plan your trip so that you collect the vehicle in the morning and use the evening to prepare."
+      },
+      {
+        "title": "Listen carefully to the briefing",
+        "text": "Even if everything seems simple, emotions run high before departure and important details can be forgotten. Pay special attention to the fridge, heater, gas stove and boiler."
+      },
+      {
+        "title": "Read the rental agreement",
+        "text": "Be sure to read the rental terms; not following them can be costly."
+      },
+      {
+        "title": "Do not rush off",
+        "text": "Once you have the vehicle, pack your things in their places, do not overload it and distribute the weight evenly on both sides."
+      },
+      {
+        "title": "Prepare a packing list",
+        "text": "To avoid forgetting essentials, make a list; you will pack everything you need and still have room for souvenirs."
+      },
+      {
+        "title": "Check the country's rules",
+        "text": "When travelling abroad, look into traffic rules, overnight spots, campsites and fees."
+      },
+      {
+        "title": "Book campsites in advance",
+        "text": "You can always find a spot, but in popular places it is worth booking ahead."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "intro": "Answers to the most common questions about motorhome rental. Can't find an answer? Get in touch.",
+    "items": [
+      {
+        "q": "What driving licence category do I need?",
+        "a": "A category B licence is enough for all our motorhomes and minibuses, as their weight does not exceed 3500 kg."
+      },
+      {
+        "q": "What is the rental price?",
+        "a": "The price is always agreed individually for the whole trip and depends on the season, duration and chosen vehicle. Contact us for a quote."
+      },
+      {
+        "q": "Is a deposit required?",
+        "a": "Yes, a refundable deposit is taken before the trip. The amount is agreed when booking."
+      },
+      {
+        "q": "Can I travel abroad?",
+        "a": "Yes, you can travel across Europe with our motorhomes. Please let us know your planned route in advance."
+      },
+      {
+        "q": "Can I travel with a pet?",
+        "a": "Trips with pets are arranged individually. Let us know when booking."
+      },
+      {
+        "q": "What is included in the price?",
+        "a": "The vehicle is handed over fully ready for travel with all essential kitchen and household equipment. Details are agreed at handover."
+      },
+      {
+        "q": "How do I book a motorhome?",
+        "a": "Send an email with your preferred dates and number of travellers, or call us; we will arrange all the details."
+      },
+      {
+        "q": "When do I collect and return the vehicle?",
+        "a": "Collection and return times are agreed individually when booking."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Rental terms",
+    "intro": "The main terms for renting our motorhomes and minibuses. All details are agreed when signing the rental agreement.",
+    "sections": [
+      {
+        "title": "Reservation",
+        "body": "The vehicle is reserved once dates and terms are agreed. We recommend booking in advance, especially during the summer season."
+      },
+      {
+        "title": "Driver",
+        "body": "A category B licence is sufficient. Driver age and experience are agreed individually."
+      },
+      {
+        "title": "Deposit",
+        "body": "A refundable deposit is taken before handover and returned once the vehicle is returned in good condition."
+      },
+      {
+        "title": "Handover and return",
+        "body": "An inspection report is made at handover. Please inspect the vehicle carefully and note any defects."
+      },
+      {
+        "title": "Use",
+        "body": "Use the vehicle responsibly, following the briefing and the rental agreement. Smoking inside is not allowed."
+      },
+      {
+        "title": "Travel abroad",
+        "body": "Trips outside Lithuania are possible by prior arrangement. Please inform us of your planned route."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Get in touch; we will help you choose the best vehicle for your trip. To book, send an email with your preferred dates and number of travellers, or call us.",
+    "companyTitle": "Company details",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "writeEmail": "Send an email",
+    "mapTitle": "How to find us"
+  }
+}
