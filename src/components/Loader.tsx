@@ -35,9 +35,9 @@ export default function Loader() {
           <motion.img
             src="/logo.svg"
             alt=""
-            className="h-24 w-24 object-contain invert"
-            initial={{ opacity: 0, scale: 0.9, filter: "blur(6px)" }}
-            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+            className="h-24 w-24 object-contain"
+            initial={{ opacity: 0, scale: 0.9, filter: "invert(1) blur(6px)" }}
+            animate={{ opacity: 1, scale: 1, filter: "invert(1) blur(0px)" }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           />
           <motion.div

@@ -54,6 +54,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* About + stats */}
       <section className="container-luxe py-20 sm:py-32 grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-20 items-center">
         <div>
+          <Reveal>
+            <div className="flex items-center gap-4 mb-8">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.svg" alt="Vakarų kemperiai" className="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
+              <span className="text-xl sm:text-2xl font-light tracking-[0.18em] uppercase leading-none">
+                Vakarų <span className="text-champagne">kemperiai</span>
+              </span>
+            </div>
+          </Reveal>
           <Reveal><p className="eyebrow mb-4">{t("aboutEyebrow")}</p></Reveal>
           <Reveal><h2 className="display text-3xl sm:text-5xl mb-7">{t("aboutTitle")}</h2></Reveal>
           <Reveal delay={80}><p className="text-muted leading-relaxed max-w-xl">{t("aboutText")}</p></Reveal>
