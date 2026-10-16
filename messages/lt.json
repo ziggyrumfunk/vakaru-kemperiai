@@ -12,7 +12,8 @@
     "contact": "Kontaktai"
   },
   "header": {
-    "callCta": "Skambinti"
+    "callCta": "Skambinti",
+    "bookCta": "Rezervuoti"
   },
   "footer": {
     "tagline": "Kemperių ir mikroautobusų nuoma bei prekyba Klaipėdoje. Padėsime išsirinkti kelionę atitinkantį automobilį ir parinkti optimalią komplektaciją.",
@@ -38,7 +39,7 @@
     "whyEyebrow": "Kodėl mes",
     "whyTitle": "Patikima nuoma nuo 2015 metų",
     "why1Title": "Platus pasirinkimas",
-    "why1Text": "Daugiau nei 20 kemperių ir mikroautobusų – nuo kompaktiškų iki erdvių alkovinių modelių didelėms šeimoms.",
+    "why1Text": "Daugiau nei 20 kemperių ir mikroautobusų: nuo kompaktiškų iki erdvių alkovinių modelių didelėms šeimoms.",
     "why2Title": "Asmeninis dėmesys",
     "why2Text": "Padėsime išsirinkti tinkamiausią automobilį, suplanuoti maršrutą ir parinkti reikalingą komplektaciją.",
     "why3Title": "Pilnai įrengti",
@@ -49,7 +50,7 @@
     "ctaEmail": "Rašyti el. laišką",
     "aboutEyebrow": "Apie mus",
     "aboutTitle": "Dešimtmečių patirtis kelionėse",
-    "aboutText": "Vakarų kemperiai — Klaipėdoje įsikūręs šeimos verslas, turintis dešimtmečių patirtį kemperių ir mikroautobusų nuomoje bei prekyboje. Per tuos metus padėjome tūkstančiams keliautojų atrasti laisvę keliauti savo tempu po Lietuvą, Baltijos šalis ir visą Europą. Mūsų parke — daugiau nei 20 kruopščiai prižiūrimų kemperių, o kiekvieną klientą pasitinkame asmeniškai: padedame išsirinkti, parodome kaip viskuo naudotis ir paruošiame kelionei.",
+    "aboutText": "Esame Klaipėdoje įsikūręs šeimos verslas, turintis dešimtmečių patirtį kemperių ir mikroautobusų nuomoje bei prekyboje. Per tuos metus padėjome tūkstančiams keliautojų atrasti laisvę keliauti savo tempu po Lietuvą, Baltijos šalis ir visą Europą. Mūsų parke yra daugiau nei 20 kruopščiai prižiūrimų kemperių, o kiekvieną klientą pasitinkame asmeniškai: padedame išsirinkti, parodome kaip viskuo naudotis ir paruošiame kelionei.",
     "statExpLabel": "metų patirtis",
     "statFleetLabel": "kemperiai ir mikroautobusai",
     "statRatingLabel": "Google įvertinimas",
@@ -57,7 +58,10 @@
     "reviewsEyebrow": "Atsiliepimai",
     "reviewsTitle": "Ką sako mūsų klientai",
     "reviewsSubtitle": "4,2 įvertinimas Google žemėlapiuose iš tikrų klientų atsiliepimų.",
-    "reviewsCta": "Žiūrėti Google"
+    "reviewsCta": "Žiūrėti Google",
+    "statLicenseLabel": "kategorijos pažymėjimo pakanka",
+    "videoPause": "Sustabdyti vaizdo įrašą",
+    "videoPlay": "Paleisti vaizdo įrašą"
   },
   "vehicle": {
     "seatsShort": "vietos",
@@ -68,7 +72,7 @@
     "priceNote": "Nuomos kaina visada derinama visam kelionės laikotarpiui.",
     "priceOnRequest": "Kaina pagal pasiteiravimą",
     "inquireTitle": "Domina šis automobilis?",
-    "inquireText": "Parašykite mums el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite – atsakysime į visus klausimus.",
+    "inquireText": "Parašykite mums el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite. Atsakysime į visus klausimus.",
     "back": "Atgal",
     "specs": {
       "chassis": "Bazė",
@@ -108,14 +112,20 @@
       "individualSeats": "Reguliuojamos sėdynės",
       "guideMic": "Gido mikrofonas",
       "largeLuggage": "Didelis bagažo skyrius"
-    }
+    },
+    "moreCampers": "Kiti kemperiai",
+    "moreMinibuses": "Kiti mikroautobusai",
+    "emailCta": "Rašyti el. laišką",
+    "callCta": "Skambinti",
+    "mailBody": "Sveiki,\n\ndomina {name}.\n\nPageidaujamos datos:\nKeliautojų skaičius:\n\nAčiū",
+    "emailShort": "Rašyti"
   },
   "listing": {
     "campersTitle": "Kemperiai",
-    "campersIntro": "Rinkitės iš plataus kokybiškų kemperių asortimento – nuo kompaktiškų iki erdvių alkovinių modelių. Visi automobiliai pilnai įrengti kelionei.",
+    "campersIntro": "Rinkitės iš plataus kokybiškų kemperių asortimento: nuo kompaktiškų iki erdvių alkovinių modelių. Visi automobiliai pilnai įrengti kelionei.",
     "minibusesTitle": "Mikroautobusai",
     "minibusesIntro": "Patogūs ir ekonomiški mikroautobusai grupinėms kelionėms, ekskursijoms ir pervežimams.",
-    "vehiclesCount": "automobilių"
+    "vehiclesCount": "{count, plural, one {# automobilis} few {# automobiliai} other {# automobilių}}"
   },
   "tips": {
     "title": "Naudingi patarimai",
@@ -127,11 +137,11 @@
       },
       {
         "title": "Atidžiai išklausykite instruktažą",
-        "text": "Net jei viskas atrodo paprasta – prieš iškeliaujant užplūsta emocijos ir svarbūs dalykai gali užsimiršti. Ypatingą dėmesį skirkite šaldytuvui, šildytuvui, dujinei viryklei ir boileriui."
+        "text": "Net jei viskas atrodo paprasta, prieš iškeliaujant užplūsta emocijos ir svarbūs dalykai gali užsimiršti. Ypatingą dėmesį skirkite šaldytuvui, šildytuvui, dujinei viryklei ir boileriui."
       },
       {
         "title": "Perskaitykite nuomos sutartį",
-        "text": "Būtinai susipažinkite su nuomos sąlygomis – jų nesilaikymas gali kainuoti."
+        "text": "Būtinai susipažinkite su nuomos sąlygomis, nes jų nesilaikymas gali kainuoti."
       },
       {
         "title": "Neskubėkite išvykti",
@@ -139,7 +149,7 @@
       },
       {
         "title": "Pasiruoškite daiktų sąrašą",
-        "text": "Kad nepamirštumėte reikalingiausių daiktų, sudarykite sąrašą – taip susidėsite viską, ko reikia, ir liks vietos suvenyrams."
+        "text": "Kad nepamirštumėte reikalingiausių daiktų, sudarykite sąrašą. Taip susidėsite viską, ko reikia, ir liks vietos suvenyrams."
       },
       {
         "title": "Pasidomėkite šalies taisyklėmis",
@@ -153,7 +163,7 @@
   },
   "faq": {
     "title": "Dažniausiai užduodami klausimai",
-    "intro": "Atsakymai į dažniausius klausimus apie kemperių nuomą. Nradote atsakymo? Susisiekite su mumis.",
+    "intro": "Atsakymai į dažniausius klausimus apie kemperių nuomą. Neradote atsakymo? Susisiekite su mumis.",
     "items": [
       {
         "q": "Kokios vairuotojo pažymėjimo kategorijos reikia?",
@@ -181,7 +191,7 @@
       },
       {
         "q": "Kaip rezervuoti kemperį?",
-        "a": "Parašykite el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite telefonu – suderinsime visas detales."
+        "a": "Parašykite el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite telefonu. Suderinsime visas detales."
       },
       {
         "q": "Kada atsiimti ir grąžinti automobilį?",
@@ -221,12 +231,27 @@
   },
   "contact": {
     "title": "Kontaktai",
-    "intro": "Susisiekite su mumis – padėsime išsirinkti Jūsų kelionei tinkamiausią automobilį. Norėdami rezervuoti, parašykite el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite.",
+    "intro": "Susisiekite su mumis ir padėsime išsirinkti Jūsų kelionei tinkamiausią automobilį. Norėdami rezervuoti, parašykite el. laišką nurodydami pageidaujamas datas ir keliautojų skaičių arba paskambinkite.",
     "companyTitle": "Rekvizitai",
     "addressLabel": "Adresas",
     "phoneLabel": "Telefonai",
     "emailLabel": "El. paštas",
     "writeEmail": "Rašyti el. laišką",
-    "mapTitle": "Kaip mus rasti"
+    "mapTitle": "Kaip mus rasti",
+    "showMap": "Rodyti žemėlapį",
+    "mapNote": "Žemėlapį teikia Google. Jį įkėlus, Google gali naudoti slapukus.",
+    "openMaps": "Atidaryti Google Maps"
+  },
+  "ui": {
+    "prev": "Ankstesnis",
+    "next": "Kitas",
+    "close": "Uždaryti",
+    "menu": "Meniu",
+    "language": "Kalba",
+    "allPhotos": "Visos nuotraukos",
+    "photoOf": "Nuotrauka {n} iš {total}",
+    "copy": "Kopijuoti",
+    "copied": "Nukopijuota",
+    "skip": "Pereiti prie turinio"
   }
 }

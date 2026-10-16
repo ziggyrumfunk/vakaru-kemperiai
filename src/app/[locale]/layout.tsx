@@ -8,7 +8,8 @@ import HtmlLang from "@/components/HtmlLang";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Loader from "@/components/Loader";
-import CookieConsent from "@/components/CookieConsent";
+import SmoothScroll from "@/components/SmoothScroll";
+import RevealObserver from "@/components/RevealObserver";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -47,15 +48,18 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
+  const t = await getTranslations("ui");
 
   return (
     <NextIntlClientProvider>
       <HtmlLang locale={locale} />
+      <SmoothScroll />
+      <RevealObserver />
+      <a href="#main" className="skip-link">{t("skip")}</a>
       <Loader />
       <SiteHeader />
-      <main>{children}</main>
+      <main id="main">{children}</main>
       <SiteFooter />
-      <CookieConsent />
     </NextIntlClientProvider>
   );
 }

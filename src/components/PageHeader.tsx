@@ -1,27 +1,40 @@
-import Image from "next/image";
+import type { ReactNode } from "react";
+import Reveal from "./Reveal";
+import SplitText from "./SplitText";
 
 export default function PageHeader({
   eyebrow,
   title,
   intro,
-  image = "/images/camper-1.webp",
+  aside,
 }: {
   eyebrow?: string;
   title: string;
   intro?: string;
-  image?: string;
+  aside?: ReactNode;
 }) {
   return (
-    <div className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <Image src={image} alt="" fill priority className="object-cover opacity-[0.14]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-paper/70 via-paper/88 to-paper" />
-      </div>
-      <div className="container-luxe pt-36 pb-12 sm:pt-44 sm:pb-16">
-        {eyebrow && <p className="eyebrow mb-5">{eyebrow}</p>}
-        <h1 className="display text-4xl sm:text-6xl max-w-3xl">{title}</h1>
-        {intro && <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted leading-relaxed">{intro}</p>}
-      </div>
-    </div>
+    <header className="wrap pb-14 pt-[calc(var(--header-h)+3rem)] sm:pb-20 lg:pt-[calc(var(--header-h)+5.5rem)]">
+      {eyebrow && (
+        <Reveal gate variant="fade">
+          <p className="t-label has-dot">{eyebrow}</p>
+        </Reveal>
+      )}
+      <SplitText as="h1" gate className="t-h1 mt-5 max-w-5xl">{title}</SplitText>
+      {(intro || aside) && (
+        <div className="mt-8 grid gap-8 lg:mt-10 lg:grid-cols-12 lg:items-end">
+          {intro && (
+            <Reveal gate delay={300} className="lg:col-span-7">
+              <p className="t-lead max-w-2xl text-muted">{intro}</p>
+            </Reveal>
+          )}
+          {aside && (
+            <Reveal gate delay={400} className="lg:col-span-4 lg:col-start-9 lg:justify-self-end">
+              {aside}
+            </Reveal>
+          )}
+        </div>
+      )}
+    </header>
   );
 }

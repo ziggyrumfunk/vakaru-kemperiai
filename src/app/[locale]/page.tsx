@@ -1,32 +1,43 @@
 export const revalidate = 30;
 
-import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import HomeHero from "@/components/HomeHero";
-import VehicleMarquee from "@/components/VehicleMarquee";
 import Reviews from "@/components/Reviews";
-import FloatingCTA from "@/components/FloatingCTA";
 import Reveal from "@/components/Reveal";
+import SplitText from "@/components/SplitText";
+import ScrubText from "@/components/ScrubText";
+import Rail from "@/components/Rail";
+import VehicleCard from "@/components/VehicleCard";
+import WhyUs from "@/components/WhyUs";
+import GhostMarquee from "@/components/GhostMarquee";
+import ContactBand from "@/components/ContactBand";
+import { ArrowRight } from "@/components/Icons";
 import { Link } from "@/i18n/navigation";
 import { getAllVehicles } from "@/lib/data";
-import { googleRating } from "@/data/reviews";
+import { CONTACT } from "@/lib/contact";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
+  const tn = await getTranslations("nav");
   const vehicles = await getAllVehicles();
-  const whys = [
-    { t: t("why1Title"), d: t("why1Text") },
-    { t: t("why2Title"), d: t("why2Text") },
-    { t: t("why3Title"), d: t("why3Text") },
-  ];
+  const featured = vehicles.filter((v) => v.featured);
+  const railVehicles = featured.length >= 4 ? featured : vehicles.slice(0, 8);
+  const minibusCount = vehicles.filter((v) => v.category === "minibus").length;
+
   const stats = [
     { v: "20+", l: t("statExpLabel") },
-    { v: "23", l: t("statFleetLabel") },
-    { v: googleRating, l: t("statRatingLabel") },
+    { v: String(vehicles.length), l: t("statFleetLabel") },
+    { v: "B", l: t("statLicenseLabel") },
     { v: "Klaipėda", l: t("statBaseLabel") },
   ];
+  const whys = [
+    { title: t("why1Title"), text: t("why1Text"), image: "/images/camper-5.webp", position: "72% 50%" },
+    { title: t("why2Title"), text: t("why2Text"), image: "/images/camper-1.webp", position: "34% 50%" },
+    { title: t("why3Title"), text: t("why3Text"), image: "/images/camper-4.webp", position: "42% 50%" },
+  ];
+
   const ld = {
     "@context": "https://schema.org",
     "@type": "AutoRental",
@@ -34,7 +45,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     url: "https://www.vakarukemperiai.lt",
     image: "https://www.vakarukemperiai.lt/images/camper-3.webp",
     telephone: "+37061448046",
-    email: "vakarukemperiai@gmail.com",
+    email: CONTACT.email,
     priceRange: "€€",
     address: { "@type": "PostalAddress", streetAddress: "Liepų g. 60a", addressLocality: "Klaipėda", postalCode: "92106", addressCountry: "LT" },
     geo: { "@type": "GeoCoordinates", latitude: 55.719055, longitude: 21.152318 },
@@ -51,76 +62,71 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <HomeHero />
 
-      {/* About + stats */}
-      <section className="container-luxe py-20 sm:py-32 grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-20 items-center">
-        <div>
-          <Reveal>
-            <div className="flex items-center gap-4 mb-8">
+      {/* About */}
+      <section className="pb-[calc(var(--section)*0.75)] pt-[var(--section)]">
+        <div className="wrap grid gap-y-12 gap-x-8 lg:grid-cols-12">
+          <Reveal className="lg:col-span-4">
+            <div className="flex items-center gap-5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.svg" alt="Vakarų kemperiai" className="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
-              <span className="text-xl sm:text-2xl font-light tracking-[0.18em] uppercase leading-none">
-                Vakarų <span className="text-champagne">kemperiai</span>
+              <img src="/logo.svg" alt="Vakarų kemperiai" className="h-24 w-24 object-contain sm:h-28 sm:w-28" />
+              <span className="text-[1.375rem] font-semibold leading-[1.02] tracking-[-0.02em]">
+                Vakarų
+                <br />
+                kemperiai
               </span>
             </div>
+            <p className="t-label has-dot mt-10">{t("aboutEyebrow")}</p>
           </Reveal>
-          <Reveal><p className="eyebrow mb-4">{t("aboutEyebrow")}</p></Reveal>
-          <Reveal><h2 className="display text-3xl sm:text-5xl mb-7">{t("aboutTitle")}</h2></Reveal>
-          <Reveal delay={80}><p className="text-muted leading-relaxed max-w-xl">{t("aboutText")}</p></Reveal>
-        </div>
-        <Reveal delay={120}>
-          <div className="grid grid-cols-2 gap-px bg-line border border-line">
-            {stats.map((s, i) => (
-              <div key={i} className="bg-paper p-7 sm:p-10">
-                <div className="text-3xl sm:text-4xl font-light text-champagne">{s.v}</div>
-                <div className="mt-2 text-xs tracking-widest uppercase text-muted">{s.l}</div>
-              </div>
-            ))}
+          <div className="lg:col-span-8">
+            <SplitText as="h2" className="t-h2">{t("aboutTitle")}</SplitText>
+            <ScrubText text={t("aboutText")} className="t-statement mt-8 lg:mt-12" />
           </div>
-        </Reveal>
+        </div>
+
+        <dl className="wrap mt-20 grid grid-cols-2 lg:mt-28 lg:grid-cols-4">
+          {stats.map((s, i) => (
+            <Reveal key={i} delay={i * 80} className="flex flex-col-reverse justify-end border-t border-line py-7 pr-4 lg:py-9">
+              <dt className="mt-3 max-w-[14rem] text-[0.9375rem] text-muted">{s.l}</dt>
+              <dd className="text-[clamp(2.5rem,1.6rem+2.6vw,4.25rem)] font-medium leading-none tracking-[-0.045em]">{s.v}</dd>
+            </Reveal>
+          ))}
+        </dl>
       </section>
 
-      {/* Featured = auto-scrolling marquee of all vehicles */}
-      <section className="relative overflow-hidden border-t border-line py-20 sm:py-28">
-        <div className="absolute inset-0 -z-10">
-          <Image src="/images/camper-4.webp" alt="" fill className="object-cover opacity-[0.08]" sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-b from-paper via-paper/90 to-paper" />
-        </div>
-        <div className="container-luxe mb-10">
-          <Reveal><p className="eyebrow mb-4">{t("featuredEyebrow")}</p></Reveal>
-          <Reveal><h2 className="display text-4xl sm:text-5xl">{t("featuredTitle")}</h2></Reveal>
-        </div>
-        <VehicleMarquee vehicles={vehicles} />
-        <div className="container-luxe mt-10">
-          <Link href="/kemperiai" className="inline-flex items-center gap-3 text-xs font-semibold tracking-[0.2em] uppercase text-champagne hover:gap-5 transition-all">
-            {t("viewAll")} <span className="text-lg leading-none">→</span>
+      {/* Fleet */}
+      <section className="border-t border-line pt-[calc(var(--section)*0.75)]">
+        <Rail
+          label={t("featuredTitle")}
+          head={
+            <>
+              <p className="t-label has-dot">{t("featuredEyebrow")}</p>
+              <SplitText as="h2" className="t-h2 mt-5">{t("featuredTitle")}</SplitText>
+            </>
+          }
+        >
+          {railVehicles.map((v) => (
+            <VehicleCard key={v.slug} vehicle={v} sizes="(max-width: 640px) 82vw, 30rem" className="w-[82vw] sm:w-[23rem] lg:w-[28rem]" />
+          ))}
+        </Rail>
+        <div className="wrap mt-12 flex flex-col gap-3 sm:flex-row">
+          <Link href="/kemperiai" className="btn btn-dark">
+            {t("viewAll")} <ArrowRight className="nudge" />
           </Link>
+          {minibusCount > 0 && (
+            <Link href="/mikroautobusai" className="btn btn-outline">
+              {tn("minibuses")} <ArrowRight className="nudge" />
+            </Link>
+          )}
         </div>
       </section>
 
-      {/* Why us (dark photo band) */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image src="/images/camper-3.webp" alt="" fill className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-charcoal/85" />
-        </div>
-        <div className="relative container-luxe py-20 sm:py-28 text-paper">
-          <Reveal><p className="text-champagne-soft text-xs font-semibold tracking-[0.28em] uppercase mb-4">{t("whyEyebrow")}</p></Reveal>
-          <Reveal><h2 className="display text-3xl sm:text-4xl max-w-2xl mb-14">{t("whyTitle")}</h2></Reveal>
-          <div className="grid gap-12 md:grid-cols-3">
-            {whys.map((w, i) => (
-              <Reveal key={i} delay={i * 90} className="border-t border-champagne-soft/40 pt-7">
-                <span className="block text-champagne-soft text-sm tracking-widest mb-4">0{i + 1}</span>
-                <h3 className="text-xl font-medium mb-3 text-paper">{w.t}</h3>
-                <p className="text-sm text-paper-dim leading-relaxed">{w.d}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WhyUs eyebrow={t("whyEyebrow")} title={t("whyTitle")} items={whys} />
+
+      <GhostMarquee text="Vakarų kemperiai · Klaipėda" />
 
       <Reviews />
 
-      <FloatingCTA />
+      <ContactBand align="right" position="40% 50%" />
     </>
   );
 }

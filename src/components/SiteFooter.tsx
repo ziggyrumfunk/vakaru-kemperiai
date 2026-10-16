@@ -1,56 +1,79 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-
-const HEAD = "text-champagne-soft text-xs font-semibold tracking-[0.28em] uppercase";
+import { CONTACT } from "@/lib/contact";
+import { ArrowRight } from "./Icons";
 
 export default function SiteFooter() {
   const t = useTranslations("footer");
   const tn = useTranslations("nav");
+  const th = useTranslations("header");
   const year = new Date().getFullYear();
 
+  const links = [
+    { href: "/kemperiai", label: tn("campers") },
+    { href: "/mikroautobusai", label: tn("minibuses") },
+    { href: "/patarimai", label: tn("tips") },
+    { href: "/duk", label: tn("faq") },
+    { href: "/nuomos-salygos", label: t("termsLink") },
+    { href: "/kontaktai", label: tn("contact") },
+  ];
+
   return (
-    <footer className="bg-charcoal text-paper-dim">
-      <div className="container-luxe py-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1.2fr]">
-        <div>
-          <div className="flex items-center gap-3 mb-5">
+    <footer className="on-dark overflow-hidden bg-ink text-paper" data-footer>
+      <div className="wrap pt-20 sm:pt-28">
+        <div className="grid gap-14 lg:grid-cols-12 lg:gap-8">
+          <div className="lg:col-span-5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.svg" alt="Vakarų kemperiai" className="h-10 w-10 object-contain invert opacity-90" />
-            <span className="text-sm font-semibold tracking-[0.22em] uppercase text-paper">
-              Vakarų <span className="text-champagne-soft">kemperiai</span>
-            </span>
+            <img src="/logo.svg" alt="" className="h-14 w-14 object-contain invert" />
+            <p className="mt-6 max-w-sm text-paper-dim">{t("tagline")}</p>
+            <Link href="/kontaktai" className="btn btn-light mt-8">
+              {th("bookCta")} <ArrowRight className="nudge" />
+            </Link>
           </div>
-          <p className="text-sm text-muted-dark max-w-xs leading-relaxed">{t("tagline")}</p>
+
+          <nav className="lg:col-span-3" aria-label={t("navTitle")}>
+            <h2 className="t-label">{t("navTitle")}</h2>
+            <ul className="mt-6 space-y-3">
+              {links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="link">{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="lg:col-span-4">
+            <h2 className="t-label">{t("contactTitle")}</h2>
+            <ul className="mt-6 space-y-3">
+              <li>
+                <a href={CONTACT.phoneHref} className="link">{CONTACT.phone}</a>
+                <span className="text-muted-dark"> · {CONTACT.phoneName}</span>
+              </li>
+              <li>
+                <a href={CONTACT.phone2Href} className="link">{CONTACT.phone2}</a>
+                <span className="text-muted-dark"> · {CONTACT.phone2Name}</span>
+              </li>
+              <li><a href={`mailto:${CONTACT.email}`} className="link">{CONTACT.email}</a></li>
+              <li className="text-paper-dim">{CONTACT.address}</li>
+            </ul>
+          </div>
         </div>
 
-        <div>
-          <h3 className={`${HEAD} mb-5`}>{t("navTitle")}</h3>
-          <ul className="space-y-3 text-sm">
-            <li><Link href="/kemperiai" className="hover:text-champagne-soft transition-colors">{tn("campers")}</Link></li>
-            <li><Link href="/mikroautobusai" className="hover:text-champagne-soft transition-colors">{tn("minibuses")}</Link></li>
-            <li><Link href="/patarimai" className="hover:text-champagne-soft transition-colors">{tn("tips")}</Link></li>
-            <li><Link href="/duk" className="hover:text-champagne-soft transition-colors">{tn("faq")}</Link></li>
-            <li><Link href="/nuomos-salygos" className="hover:text-champagne-soft transition-colors">{t("termsLink")}</Link></li>
-            <li><Link href="/kontaktai" className="hover:text-champagne-soft transition-colors">{tn("contact")}</Link></li>
-          </ul>
-        </div>
+        <p
+          className="mt-20 select-none whitespace-nowrap text-[min(11.2vw,10.2rem)] font-medium leading-[0.8] tracking-[-0.055em] text-paper sm:mt-28"
+          aria-hidden="true"
+        >
+          Vakarų kemperiai
+        </p>
 
-        <div>
-          <h3 className={`${HEAD} mb-5`}>{t("contactTitle")}</h3>
-          <ul className="space-y-3 text-sm">
-            <li>Liepų g. 60a, Klaipėda</li>
-            <li><a href="tel:+37061448046" className="hover:text-champagne-soft transition-colors">+370 614 48046 — Audrius</a></li>
-            <li><a href="tel:+37065944888" className="hover:text-champagne-soft transition-colors">+370 659 44888 — Gintautas</a></li>
-            <li><a href="mailto:vakarukemperiai@gmail.com" className="hover:text-champagne-soft transition-colors">vakarukemperiai@gmail.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <div className="border-t border-line-dark">
-        <div className="container-luxe py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-dark">
-          <span>© {year} MB „Vakarų kemperiai". {t("rights")}</span>
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1">
-            <span>Site by <a href="https://www.rumfunk.nl" target="_blank" rel="noopener" className="text-champagne-soft hover:text-champagne transition-colors">rumfunk.nl</a></span>
-            <Link href="/admin" className="tracking-widest uppercase hover:text-champagne-soft transition-colors">Admin</Link>
-            <span className="tracking-widest uppercase">Klaipėda · Lietuva</span>
+        <div className="mt-8 flex flex-col gap-3 border-t border-line-dark py-6 text-[0.875rem] text-muted-dark sm:flex-row sm:items-center sm:justify-between">
+          <span>© {year} MB „Vakarų kemperiai“. {t("rights")}</span>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <span>
+              Site by{" "}
+              <a href="https://www.rumfunk.nl" target="_blank" rel="noopener" className="link text-paper-dim">rumfunk.nl</a>
+            </span>
+            <Link href="/admin" className="link">Admin</Link>
           </div>
         </div>
       </div>

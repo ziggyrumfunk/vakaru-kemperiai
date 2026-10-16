@@ -12,7 +12,8 @@
     "contact": "Contact"
   },
   "header": {
-    "callCta": "Call us"
+    "callCta": "Call us",
+    "bookCta": "Book now"
   },
   "footer": {
     "tagline": "Motorhome and minibus rental and sales in Klaipėda. We help you pick the right vehicle for your trip and the ideal configuration.",
@@ -57,7 +58,10 @@
     "reviewsEyebrow": "Reviews",
     "reviewsTitle": "What our customers say",
     "reviewsSubtitle": "Rated 4.2 on Google Maps from real customer reviews.",
-    "reviewsCta": "View on Google"
+    "reviewsCta": "View on Google",
+    "statLicenseLabel": "category licence is enough",
+    "videoPause": "Pause video",
+    "videoPlay": "Play video"
   },
   "vehicle": {
     "seatsShort": "seats",
@@ -108,14 +112,20 @@
       "individualSeats": "Adjustable seats",
       "guideMic": "Guide microphone",
       "largeLuggage": "Large luggage space"
-    }
+    },
+    "moreCampers": "More motorhomes",
+    "moreMinibuses": "More minibuses",
+    "emailCta": "Send an email",
+    "callCta": "Call us",
+    "mailBody": "Hello,\n\nI am interested in the {name}.\n\nPreferred dates:\nNumber of travellers:\n\nThank you",
+    "emailShort": "Email"
   },
   "listing": {
     "campersTitle": "Motorhomes",
     "campersIntro": "Choose from a wide range of quality motorhomes, from compact to spacious overcab layouts. Every vehicle is fully equipped for travel.",
     "minibusesTitle": "Minibuses",
     "minibusesIntro": "Comfortable and economical minibuses for group trips, excursions and transfers.",
-    "vehiclesCount": "vehicles"
+    "vehiclesCount": "{count, plural, one {# vehicle} other {# vehicles}}"
   },
   "tips": {
     "title": "Useful tips",
@@ -227,6 +237,21 @@
     "phoneLabel": "Phone",
     "emailLabel": "Email",
     "writeEmail": "Send an email",
-    "mapTitle": "How to find us"
+    "mapTitle": "How to find us",
+    "showMap": "Show map",
+    "mapNote": "The map is provided by Google. Loading it allows Google to set cookies.",
+    "openMaps": "Open in Google Maps"
+  },
+  "ui": {
+    "prev": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "menu": "Menu",
+    "language": "Language",
+    "allPhotos": "All photos",
+    "photoOf": "Photo {n} of {total}",
+    "copy": "Copy",
+    "copied": "Copied",
+    "skip": "Skip to content"
   }
 }

@@ -24,6 +24,7 @@ export default async function CamperDetailPage({ params }: { params: Promise<{ l
   setRequestLocale(locale);
   const vehicle = await getVehicleBySlug(slug);
   if (!vehicle || vehicle.category !== "camper") notFound();
+  const others = (await getCampers()).filter((v) => v.slug !== vehicle.slug).slice(0, 8);
   const ld = {
     "@context": "https://schema.org", "@type": "Product", name: vehicle.name, image: vehicle.images,
     description: vehicle.descriptionLt ?? vehicle.name, category: "Motorhome rental",
@@ -32,7 +33,7 @@ export default async function CamperDetailPage({ params }: { params: Promise<{ l
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <VehicleDetail vehicle={vehicle} />
+      <VehicleDetail vehicle={vehicle} others={others} />
     </>
   );
 }

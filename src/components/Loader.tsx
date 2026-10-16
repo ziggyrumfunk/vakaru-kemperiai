@@ -1,57 +1,42 @@
 "use client";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
 
+function markLoaded() {
+  const root = document.documentElement;
+  if (root.hasAttribute("data-loaded")) return;
+  root.setAttribute("data-loaded", "");
+  try {
+    sessionStorage.setItem("vk_loaded", "1");
+  } catch {}
+  window.dispatchEvent(new Event("vk:loaded"));
+}
+
+/** First visit of a session only: logo on ink, then the panel lifts away. */
 export default function Loader() {
-  const [show, setShow] = useState(true);
+  const [stage, setStage] = useState<"show" | "leave" | "gone">("show");
 
   useEffect(() => {
-    let seen = false;
-    try {
-      seen = sessionStorage.getItem("vk_loaded") === "1";
-    } catch {}
-    if (seen) {
-      setShow(false);
+    // returning visitors: CSS already hides the loader (html[data-seen])
+    if (document.documentElement.hasAttribute("data-seen")) {
+      markLoaded();
       return;
     }
-    const t = setTimeout(() => {
-      setShow(false);
-      try {
-        sessionStorage.setItem("vk_loaded", "1");
-      } catch {}
-    }, 1150);
-    return () => clearTimeout(t);
+    const timers = [
+      window.setTimeout(() => setStage("leave"), 1150),
+      window.setTimeout(markLoaded, 1450),
+      window.setTimeout(() => setStage("gone"), 2300),
+    ];
+    return () => timers.forEach(clearTimeout);
   }, []);
 
+  if (stage === "gone") return null;
   return (
-    <AnimatePresence>
-      {show && (
-        <motion.div
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-charcoal"
-          initial={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
-        >
-          <motion.img
-            src="/logo.svg"
-            alt=""
-            className="h-24 w-24 object-contain"
-            initial={{ opacity: 0, scale: 0.9, filter: "invert(1) blur(6px)" }}
-            animate={{ opacity: 1, scale: 1, filter: "invert(1) blur(0px)" }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          />
-          <motion.div
-            className="mt-8 h-px w-40 overflow-hidden bg-line"
-          >
-            <motion.div
-              className="h-full bg-champagne"
-              initial={{ x: "-100%" }}
-              animate={{ x: "0%" }}
-              transition={{ duration: 1.05, ease: "easeInOut" }}
-            />
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <div className={`loader ${stage === "leave" ? "is-leaving" : ""}`} aria-hidden="true">
+      <div className="loader-inner">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.svg" alt="" className="loader-logo" />
+        <div className="loader-bar"><span /></div>
+      </div>
+    </div>
   );
 }

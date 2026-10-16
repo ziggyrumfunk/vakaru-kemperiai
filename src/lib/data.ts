@@ -26,6 +26,12 @@ function rowToVehicle(r: any): Vehicle {
     berths: r.berths ?? undefined,
     features: (r.features ?? []) as FeatureKey[],
     descriptionLt: r.description_lt ?? undefined,
+    descriptions: {
+      lt: r.description_lt ?? undefined,
+      ru: r.description_ru ?? undefined,
+      lv: r.description_lv ?? undefined,
+      en: r.description_en ?? undefined,
+    },
     heroImage: r.hero_image ?? (r.images?.[0] ?? ""),
     images: (r.images ?? []) as string[],
   };

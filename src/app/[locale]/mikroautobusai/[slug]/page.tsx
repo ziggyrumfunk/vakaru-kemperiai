@@ -24,6 +24,7 @@ export default async function MinibusDetailPage({ params }: { params: Promise<{ 
   setRequestLocale(locale);
   const vehicle = await getVehicleBySlug(slug);
   if (!vehicle || vehicle.category !== "minibus") notFound();
+  const others = (await getMinibuses()).filter((v) => v.slug !== vehicle.slug).slice(0, 8);
   const ld = {
     "@context": "https://schema.org", "@type": "Product", name: vehicle.name, image: vehicle.images,
     description: vehicle.descriptionLt ?? vehicle.name, category: "Minibus rental",
@@ -32,7 +33,7 @@ export default async function MinibusDetailPage({ params }: { params: Promise<{ 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <VehicleDetail vehicle={vehicle} />
+      <VehicleDetail vehicle={vehicle} others={others} />
     </>
   );
 }

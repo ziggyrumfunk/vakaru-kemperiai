@@ -46,6 +46,8 @@ export interface Vehicle {
   berths?: number;
   features: FeatureKey[];
   descriptionLt?: string;
+  /** descriptions in other languages; LT is the fallback */
+  descriptions?: Partial<Record<"lt" | "ru" | "lv" | "en", string>>;
   heroImage: string;
   images: string[];
 }

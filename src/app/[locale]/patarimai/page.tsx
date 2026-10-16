@@ -3,6 +3,8 @@ import { altMeta } from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
+import ParallaxImage from "@/components/ParallaxImage";
+import ContactBand from "@/components/ContactBand";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -14,23 +16,27 @@ export default async function TipsPage({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("tips");
+  const tn = await getTranslations("nav");
   const items = t.raw("items") as { title: string; text: string }[];
+
   return (
     <>
-      <PageHeader eyebrow="Vakarų kemperiai" title={t("title")} intro={t("intro")} image="/images/camper-4.webp" />
-      <section className="container-luxe pb-28 max-w-3xl">
-        <div className="border-t border-line">
-          {items.map((it, i) => (
-            <Reveal key={i} className="flex gap-6 py-7 border-b border-line">
-              <span className="text-champagne text-sm tracking-widest pt-1 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-              <div>
-                <h3 className="text-lg font-medium mb-2">{it.title}</h3>
-                <p className="text-sm text-muted leading-relaxed">{it.text}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+      <PageHeader eyebrow={tn("tips")} title={t("title")} intro={t("intro")} />
+
+      <Reveal variant="clip" className="w-full">
+        <ParallaxImage src="/images/camper-4.webp" amount={12} priority className="h-[56svh] min-h-[22rem] w-full lg:h-[78svh]" />
+      </Reveal>
+
+      <section className="wrap grid gap-x-12 py-[var(--section)] md:grid-cols-2 lg:gap-x-20">
+        {items.map((it, i) => (
+          <Reveal key={i} delay={(i % 2) * 90} className="border-t border-line py-9 lg:py-12">
+            <h2 className="t-h3">{it.title}</h2>
+            <p className="mt-4 max-w-xl text-muted">{it.text}</p>
+          </Reveal>
+        ))}
       </section>
+
+      <ContactBand image="/images/camper-1.webp" align="right" position="30% 50%" />
     </>
   );
 }
